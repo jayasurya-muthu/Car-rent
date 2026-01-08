@@ -1,0 +1,623 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY BACKGROUND */
+body.image1 {
+    background: url("car-bg.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+/*-- NAVBAR --*/
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    z-index: 1000;
+}
+
+.logo {
+    color: gold;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: gold;
+}
+
+/*-- HERO SECtion-- */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image:url(car3.webp);
+    background-repeat:no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #ddd;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    padding: 12px 30px;
+    font-size: 16px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.hero button:hover {
+    background: #d4af37;
+}
+
+/* -- SERVICES SECTION -- */
+.services {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.service-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    background-color:gold;
+}
+
+.box h3 {
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.box p {
+    color: #555;
+}
+
+/*-- RESPONSIVE -- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .service-boxes {
+        grid-template-columns: 1fr;
+    }
+}
+/*-- SALES PAGE BACKGROUND -- */
+body.image2 {
+    background-image:url(car1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* -- PAGE HEADING --*/
+.heading0 {
+    margin-top: 90px; 
+    text-align: center;
+    color: gold;
+    font-size: 22px;
+    padding: 20px;
+    background: #000;
+    letter-spacing: 1px;
+}
+
+/* -- CAR SECTION -- */
+.car-section {
+    margin-top:4%;
+    padding: 60px;
+    
+}
+
+.car-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: gold;
+}
+
+/*-- GRID -- */
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/*-- CAR CARD-- */
+.car-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/*-- CAR IMAGE -- */
+.car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*-- CAR INFO-- */
+.car-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.car-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.price {
+    font-size: 18px;
+    color: #b8860b;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/*-- BUTTON-- */
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #d4af37;
+    transform: scale(1.05);
+}
+
+/*-- RESPONSIVE-- */
+@media (max-width: 1200px) {
+    .car-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .car-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .car-section {
+        padding: 30px 15px;
+    }
+
+    .car-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .heading0 {
+        font-size: 18px;
+    }
+}
+/* -- SERVICE PAGE BODY-- */
+.service-body {
+    opacity:1;  
+}
+
+/* -- SERVICE HERO --*/
+.services {
+    margin-top: 55px; 
+    background-image:url(detailing.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.service-body .hero h1 {
+    color: gold;
+    font-size: 48px;
+    margin-bottom: 15px;
+    padding:20px;
+}
+
+.service-body .hero p {
+    font-size: 18px;
+    max-width: 700px;
+}
+
+/* --SERVICES SECTION -- */
+.service-body .services {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.service-body .services h2 {
+    font-size: 36px;
+    margin-top: 30%;
+    color:goldenrod;
+}
+
+/* -- SERVICE GRID-- */
+.service-body .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* -- SERVICE BOX --*/
+.service-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* -- SERVICE IMAGE -- */
+.service-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/*-- SERVICE TEXT--*/
+.service-box h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+.service-box p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* --RESPONSIVE -- */
+@media (max-width: 1200px) {
+    .service-body .services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .service-body .hero h1 {
+        font-size: 36px;
+    }
+
+    .service-body .services {
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .service-body .services {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .service-body .hero h1 {
+        font-size: 28px;
+    }
+}
+/* -- BRAND PAGE BACKGROUND-- */
+body.image3 {
+    background-image:url(car4.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*-- BRAND SECTION --*/
+.brands-section {
+    margin-top: 60px; 
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.brands-section h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color:gold;
+}
+
+/*-- BRAND GRID -- */
+.brand-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* -- BRAND CARD -- */
+.brand-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.brand-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/*--BRAND IMAGE-- */
+.brand-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+/*-- BRAND TEXT--*/
+.brand-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+.brand-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* -- MID & END TEXT -- */
+.midpoint {
+    margin-top: 40px;
+    font-size: xx-large;
+    color:yellow;
+}
+
+.endpoint {
+    margin-top: 30px;
+    font-size: xx-large;
+    color:yellow;
+    font-style: italic;
+}
+
+/*-- RESPONSIVE --*/
+@media (max-width: 1200px) {
+    .brand-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .brand-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .brands-section h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .brand-container {
+        grid-template-columns: 1fr;
+    }
+
+    .brands-section {
+        padding: 40px 20px;
+    }
+}
+/*-- CONTACT PAGE BODY -- */
+
+
+/* --CONTACT HERO -- */
+.contact-hero {
+    margin-top: 90px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-hero h1 {
+    color: gold;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.contact-hero p {
+    color: #ddd;
+    font-size: 18px;
+}
+
+/*-- CONTACT INFO -- */
+.contact-info {
+    padding: 70px 60px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.info-box {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.info-box p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+/* -- MAP SECTION -- */
+.map-section {
+    padding: 50px 60px;
+    background: #111;
+    text-align: center;
+}
+
+.map-section h2 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+/*-- CONTACT FORM -- */
+.contact-form-section {
+    padding: 70px 60px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.contact-form-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: gold;
+}
+
+.contact-form button {
+    padding: 14px;
+    font-size: 16px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.contact-form button:hover {
+    background: #d4af37;
+    transform: scale(1.05);
+}
+
+/* -- RESPONSIVE--*/
+@media (max-width: 768px) {
+    .contact-hero h1 {
+        font-size: 30px;
+    }
+
+    .contact-info,
+    .map-section,
+    .contact-form-section {
+        padding: 40px 20px;
+    }
+}
