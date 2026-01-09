@@ -392,7 +392,7 @@ body.image2 {
 }
 /* -- BRAND PAGE BACKGROUND-- */
 body.image3 {
-    background-image:url(car4.webp);
+    background-image:url(bmw\ m5.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -453,19 +453,6 @@ body.image3 {
     line-height: 1.6;
 }
 
-/* -- MID & END TEXT -- */
-.midpoint {
-    margin-top: 40px;
-    font-size: xx-large;
-    color:yellow;
-}
-
-.endpoint {
-    margin-top: 30px;
-    font-size: xx-large;
-    color:yellow;
-    font-style: italic;
-}
 
 /*-- RESPONSIVE --*/
 @media (max-width: 1200px) {
