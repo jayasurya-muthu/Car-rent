@@ -253,6 +253,9 @@ body.image2 {
 
 /*-- RESPONSIVE-- */
 @media (max-width: 1200px) {
+    .navbar{
+        position:static;
+    }
     .car-grid {
         grid-template-columns: repeat(3, 1fr);
     }
