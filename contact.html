@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conduct</title>
     <link rel="stylesheet"href="file.css">
+    <script src="file.js"></script>
 </head>
 
 <body class="image4">
@@ -54,12 +55,12 @@
     <section class="contact-form-section">
         <h2>Send Us a Message</h2>
 
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="phone" placeholder="Phone Number" required>
-            <textarea rows="5" placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
+        <form class="contact-form"id="contact-form">
+            <input type="text" placeholder="Your Name"id="name" required>
+            <input type="email" placeholder="Email Address"id="email" required>
+            <input type="phone" placeholder="Phone Number"id="phone" required>
+            <textarea rows="5" placeholder="Your Message"id="message"></textarea>
+            <button type="submit"onclick="finish()">Send Message</button>
         </form>
     </section>
 
